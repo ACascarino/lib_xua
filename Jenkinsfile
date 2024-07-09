@@ -101,7 +101,7 @@ pipeline {
         }
         stage('Build Mac host app') {
           agent {
-            label 'x86_64&&linux'
+            label 'x86_64&&macOS'
           }
           steps {
             xcorePrepareSandbox("${VIEW}", "${REPO}")
